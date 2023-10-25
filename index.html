@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+    <title>Image slider</title>
+
+</head>
+
+<body>
+    <div class="heading">
+        <h2 class="text">The Beautiful House</h2>
+    </div>
+
+    <!-- Image slides -->
+    <div class="slider-container">
+        <div class="slider">
+            <img src="./img/img-1.jpg" class="slide" alt="img">
+            <img src="./img/img-2.jpg" class="slide" alt="img">
+            <img src="./img/img-3.jpg" class="slide" alt="img">
+            <img src="./img/img-2.jpg" class="slide" alt="img">
+            <img src="./img/img-4.jpg" class="slide" alt="img">
+            <img src="./img/img-1.jpg" class="slide" alt="img">
+
+        </div>
+    </div>
+    <!-- Button icons -->
+    <div class="slider-buttons" style="margin-top:170px">
+        <img src="./img/left-arrow.png" class="prev_button" onclick="goPrev()" alt="img">
+        <img src="./img/right-arrow.png" class="next_button" onclick="goNext()" alt="img">
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

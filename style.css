@@ -1,0 +1,119 @@
+body {
+    max-width: 100vw;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image:url("img/background-image.gif");
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+.slider-container {
+  border-radius: 5px;
+  margin-top: 100px;
+  border: none;
+  box-shadow: 0 0 70px rgb(255, 255, 0);
+  position: relative;
+  width: 506px;
+  height: 289PX;
+  border: 6px solid rgb(230, 224, 194);
+  overflow: hidden;
+  outline: none;
+}
+
+.slider {
+  display: flex;
+}
+
+.slide {
+  flex: 0 0 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  transition: 1s;
+}
+
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-buttons {
+  margin-top: 200px;
+  position: absolute;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 705%;
+  margin-top: calc(50% - 48%);
+}
+
+.slider-buttons img {
+  
+  width: 42px;
+  z-index: 1;
+  opacity: 0.4;
+  top: 12%;
+}
+
+img:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.heading{
+  color: antiquewhite;
+
+  margin: 0;
+  margin-bottom: 250px;
+  height: 200px;
+  width: 100%;
+  position: absolute;
+}
+.text{
+  font-size: 250%;
+  font-family:monospace;
+  text-align: center;
+  margin-top:60px;
+}
+
+@media screen and (max-width: 768px) {
+  .text {
+    margin: 0;
+    margin-bottom: 250px;
+  }
+
+  .font {
+    font-size: 190%;
+  }
+
+  .slider-container {
+    width: 444px;
+    height: 250px;
+  }
+
+  .slide {
+    width: 95%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .slider img {
+    width: 45px;
+  }
+
+  .slider-buttons {
+    gap: 455px;
+  }
+
+  .slider-buttons img {
+    bottom: 80px;
+    width: 45px;
+  }
+}
